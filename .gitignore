@@ -1,2 +1,4 @@
 *.zip
 /space*
+*.scss
+*.css.map
