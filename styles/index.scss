@@ -8,8 +8,9 @@ body{
   padding: 0px;
   margin: 0px;
 }
-h1, h2{
+h1, h2,h3{
   margin: 0px 0px 0px 0px;
+  font-weight: normal;
 }
 .header{
   position: fixed;
@@ -23,12 +24,13 @@ h1, h2{
   box-sizing: border-box;
   &-logo{
     background: no-repeat url(../assets/shared/logo.svg);
+    background-size:50px;
     width: 50px;
     height: 50px;
     margin: 0px 50px;
   }
   &-line{
-    width: 400px;
+    width: 30%;
     border-top: 1px solid $gray;
     margin:0px -30px 0px 0px;
   }
@@ -53,8 +55,7 @@ h1, h2{
         border-bottom: 5px solid $white;
       }
       &:hover{
-        border-bottom: 5px solid $white;
-        opacity: 0.50;
+        @include hover;
       }
     }
     &_number{
@@ -116,12 +117,17 @@ h1, h2{
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   &-moon{
     background: no-repeat url(../assets/destination/image-moon.png);
     background-size: 350px;
     width: 350px;
     height: 350px;
+  }
+  &-line{
+    width: 100%;
+    border-top: 1px solid $gray;
+    margin:0px 0px 15px 0px;
   }
   &-content{
     color: $white;
@@ -130,14 +136,52 @@ h1, h2{
     align-items: center;
     flex-wrap:wrap;
     justify-content: space-between;
+    margin: 0px 0px 40px 0px;
     &_title{
       font-weight: normal;
       width: 100%;
-      margin: 30px 0px;
+      margin: 0px 0px 20px 0px;
       text-transform: uppercase;
     }
-    &_info{
-      width: 50%;
+    &-info{
+      width: 45%;
+      &_nav{
+         height: 25px;
+      }
+      &_navlink{
+        @include nav-font;
+        display: inline-block;
+        text-transform: uppercase;
+        color: $white;
+        text-decoration: none;
+        margin: 0px 30px 0px 0px;
+        height: 100%;
+        &:hover{
+          @include hover;
+      }
+      }
+      &_title{
+        @include heading_2;
+        text-transform: uppercase;
+        margin: 10px 0px 0px 0px;
+      }
+      &_text{
+        @include body_text;
+        margin:0px 0px 30px 0px;
+      }
+      &_wrapper{
+        display: flex;
+      }
+      &_distanceTime{
+        @include subheading_2;
+        text-transform: uppercase;
+        margin: 0px 50px 0px 0px;
+      }
+      &_number{
+        @include subheading_1;
+        text-transform: uppercase;
+        margin: 10px 50px 0px 0px;
+      }
     }
   }
 }
