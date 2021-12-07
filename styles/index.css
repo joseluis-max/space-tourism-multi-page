@@ -167,6 +167,7 @@ h1, h2, h3 {
   background-size: 350px;
   width: 350px;
   height: 350px;
+  margin: 0px 0px 0px 70px;
 }
 
 .destination-mars {
@@ -174,6 +175,7 @@ h1, h2, h3 {
   background-size: 350px;
   width: 350px;
   height: 350px;
+  margin: 0px 0px 0px 70px;
 }
 
 .destination-titan {
@@ -181,6 +183,7 @@ h1, h2, h3 {
   background-size: 350px;
   width: 350px;
   height: 350px;
+  margin: 0px 0px 0px 70px;
 }
 
 .destination-europa {
@@ -188,6 +191,7 @@ h1, h2, h3 {
   background-size: 350px;
   width: 350px;
   height: 350px;
+  margin: 0px 0px 0px 70px;
 }
 
 .destination-line {
@@ -256,6 +260,7 @@ h1, h2, h3 {
   font-family: "Barlow", Regular;
   font-size: 18px;
   line-height: 32px;
+  height: 120px;
   margin: 0px 0px 30px 0px;
 }
 
