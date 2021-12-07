@@ -169,6 +169,27 @@ h1, h2, h3 {
   height: 350px;
 }
 
+.destination-mars {
+  background: no-repeat url(../assets/destination/image-mars.png);
+  background-size: 350px;
+  width: 350px;
+  height: 350px;
+}
+
+.destination-titan {
+  background: no-repeat url(../assets/destination/image-titan.png);
+  background-size: 350px;
+  width: 350px;
+  height: 350px;
+}
+
+.destination-europa {
+  background: no-repeat url(../assets/destination/image-europa.png);
+  background-size: 350px;
+  width: 350px;
+  height: 350px;
+}
+
 .destination-line {
   width: 100%;
   border-top: 1px solid #9797974d;

@@ -120,9 +120,19 @@ h1, h2,h3{
   align-items: flex-end;
   &-moon{
     background: no-repeat url(../assets/destination/image-moon.png);
-    background-size: 350px;
-    width: 350px;
-    height: 350px;
+    @include image_size_planet;
+  }
+  &-mars{
+    background: no-repeat url(../assets/destination/image-mars.png);
+    @include image_size_planet;
+  }
+  &-titan{
+    background: no-repeat url(../assets/destination/image-titan.png);
+    @include image_size_planet;
+  }
+  &-europa{
+    background: no-repeat url(../assets/destination/image-europa.png);
+    @include image_size_planet;
   }
   &-line{
     width: 100%;
