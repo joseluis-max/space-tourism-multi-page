@@ -5,107 +5,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&display=swap');
 
 body{
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 h1, h2{
-    margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .header{
-    position: fixed;
-    top: 5%;
-    bottom: 80%;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &-logo{
-        background: no-repeat url(../assets/shared/logo.svg);
-        width: 50px;
-        height: 50px;
-        margin: 0px 50px;
+  position: fixed;
+  top: 5%;
+  bottom: 80%;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  &-logo{
+    background: no-repeat url(../assets/shared/logo.svg);
+    width: 50px;
+    height: 50px;
+    margin: 0px 50px;
+  }
+  &-line{
+    width: 400px;
+    border-top: 1px solid $gray;
+    margin:0px -30px 0px 0px;
+  }
+  &-nav{
+    background: $background;
+    backdrop-filter: blur(81.5485px);
+    width: 60vw;
+    height: 80px;
+    padding: 0px 100px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    @include nav-font;
+    &_link{
+      box-sizing: border-box;
+      display: inline-block;
+      height: 100%;
+      color:$white;
+      line-height: 80px;
+      text-decoration: none;
+      margin: 0px 30px 0px 0px;
+      &:active{
+        border-bottom: 5px solid $white;
+      }
+      &:hover{
+        border-bottom: 5px solid $white;
+        opacity: 0.50;
+      }
     }
-    &-line{
-        width: 400px;
-        border-top: 1px solid $gray;
-        margin:0px -30px 0px 0px;
+    &_number{
+      font-weight: $fw7;
     }
-    &-nav{
-        background: $background;
-        backdrop-filter: blur(81.5485px);
-        width: 60vw;
-        height: 80px;
-        padding: 0px 100px;
-        box-sizing: border-box;
-        text-transform: uppercase;
-        @include nav-font;
-        &_link{
-            box-sizing: border-box;
-            display: inline-block;
-            height: 100%;
-            color:$white;
-            line-height: 80px;
-            text-decoration: none;
-            margin: 0px 30px 0px 0px;
-            &:active{
-                border-bottom: 5px solid $white;
-            }
-            &:hover{
-                border-bottom: 5px solid $white;
-                opacity: 0.50;
-            }
-        }
-        &_number{
-            font-weight: $fw7;
-        }
-    }
+  }
 }
 .main {
-    background: no-repeat url(../assets/home/background-home-desktop.jpg);
-    background-position: -100px -130px;
-    background-size: auto;
-    width: 100vw;
-    height: 100vh;
+  background: no-repeat url(../assets/home/background-home-desktop.jpg);
+  background-position: -100px -130px;
+  background-size: auto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  &-content{
+    margin: 0px 0px 0px 0px;
+    width: 450px;
+    height: 382px;
+    color: white;
+    &_subheading{
+      text-transform: uppercase;
+      font-weight: 300;
+      @include heading_5;
+    }
+    &_heading{
+      @include heading_1;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    &_text{
+      @include body_text;
+      margin: 0px;
+    }
+  }
+
+  &-button{
+    background-color: $white;
+    color: $dark-blue;
+    width: 230px;
+    height: 230px;
+    border: none;
+    border-radius: 50%;
+    margin: 0px 0px 60px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: ease-out 400ms all;
+    @include heading_4;
+    &:hover{
+      box-shadow: 0px 0px 0px 50px $gray;
+    }
+  }
+}
+.destination{
+  background-color: $dark-blue;
+  background: no-repeat url(../assets/destination/background-destination-desktop.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  &-moon{
+    background: no-repeat url(../assets/destination/image-moon.png);
+    background-size: 350px;
+    width: 350px;
+    height: 350px;
+  }
+  &-content{
+    color: $white;
+    padding: 0px 150px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-
-    &-content{
-        margin: 0px 0px 0px 0px;
-        width: 450px;
-        height: 382px;
-        color: white;
-        &_subheading{
-            text-transform: uppercase;
-            font-weight: 300;
-            @include heading_5;
-        }
-        &_heading{
-            @include heading_1;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-        &_text{
-            @include body_text;
-            margin: 0px;
-        }
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    &_title{
+      font-weight: normal;
+      width: 100%;
+      margin: 30px 0px;
+      text-transform: uppercase;
     }
-
-    &-button{
-        background-color: $white;
-        color: $dark-blue;
-        width: 230px;
-        height: 230px;
-        border: none;
-        border-radius: 50%;
-        margin: 0px 0px 60px 0px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        transition: ease-out 400ms all;
-        @include heading_4;
-        &:hover{
-            box-shadow: 0px 0px 0px 50px $gray;
-        }
+    &_info{
+      width: 50%;
     }
+  }
 }

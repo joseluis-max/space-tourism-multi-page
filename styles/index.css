@@ -25,6 +25,8 @@ h1, h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header-logo {
@@ -143,5 +145,52 @@ h1, h2 {
 .main-button:hover {
   -webkit-box-shadow: 0px 0px 0px 50px #9797974d;
           box-shadow: 0px 0px 0px 50px #9797974d;
+}
+
+.destination {
+  background-color: #0B0D17;
+  background: no-repeat url(../assets/destination/background-destination-desktop.jpg);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destination-moon {
+  background: no-repeat url(../assets/destination/image-moon.png);
+  background-size: 350px;
+  width: 350px;
+  height: 350px;
+}
+
+.destination-content {
+  color: #FFFFFF;
+  padding: 0px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.destination-content_title {
+  font-weight: normal;
+  width: 100%;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+
+.destination-content_info {
+  width: 50%;
 }
 /*# sourceMappingURL=index.css.map */
