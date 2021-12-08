@@ -112,8 +112,8 @@ h1, h2,h3{
   }
 }
 .destination{
-  background-color: $dark-blue;
   background: no-repeat url(../assets/destination/background-destination-desktop.jpg);
+  background-color: $dark-blue;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -195,4 +195,13 @@ h1, h2,h3{
       }
     }
   }
+}
+
+.crew{
+  background: no-repeat url(../assets/destination/background-crew-desktop.jpg);
+  background-color: $dark-blue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
 }
