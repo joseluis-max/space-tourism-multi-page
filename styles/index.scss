@@ -51,7 +51,7 @@ h1, h2,h3{
       line-height: 80px;
       text-decoration: none;
       margin: 0px 30px 0px 0px;
-      &:active{
+      &_active{
         border-bottom: 5px solid $white;
       }
       &:hover{
@@ -155,14 +155,14 @@ h1, h2,h3{
     }
     &_number{
       text-transform: uppercase;
-       mix-blend-mode: normal;
+      mix-blend-mode: normal;
       opacity: 0.5;
       font-weight: 700;
     }
     &-info{
       width: 45%;
       &_nav{
-         height: 25px;
+        height: 25px;
       }
       &_navlink{
         @include nav-font;
@@ -172,9 +172,12 @@ h1, h2,h3{
         text-decoration: none;
         margin: 0px 30px 0px 0px;
         height: 100%;
+        &_active{
+          border-bottom: 5px solid $white;
+        }
         &:hover{
           @include hover;
-      }
+        }
       }
       &_title{
         @include heading_2;
@@ -251,6 +254,9 @@ h1, h2,h3{
           opacity: 0.5;
           cursor: pointer;
         }
+        &_active{
+          opacity: 1;
+        }
       }
     }
   }
@@ -308,6 +314,11 @@ h1, h2,h3{
       &:hover{
         opacity: 1;
         cursor: pointer;
+      }
+      &_active{
+        background-color: $white;
+        color: $dark-blue;
+        opacity: 1;
       }
     }
     &_subwrapper{

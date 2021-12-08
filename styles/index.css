@@ -70,7 +70,7 @@ h1, h2, h3 {
   margin: 0px 30px 0px 0px;
 }
 
-.header-nav_link:active {
+.header-nav_link_active {
   border-bottom: 5px solid #FFFFFF;
 }
 
@@ -254,6 +254,10 @@ h1, h2, h3 {
   height: 100%;
 }
 
+.destination-content-info_navlink_active {
+  border-bottom: 5px solid #FFFFFF;
+}
+
 .destination-content-info_navlink:hover {
   border-bottom: 5px solid #FFFFFF;
   opacity: 0.50;
@@ -374,6 +378,10 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
+.crew-content-circles_circle_active {
+  opacity: 1;
+}
+
 .crew-commander {
   width: 40vw;
   height: 75vh;
@@ -464,6 +472,12 @@ h1, h2, h3 {
 .technology-content_number:hover {
   opacity: 1;
   cursor: pointer;
+}
+
+.technology-content_number_active {
+  background-color: #FFFFFF;
+  color: #0B0D17;
+  opacity: 1;
 }
 
 .technology-content_subwrapper {
