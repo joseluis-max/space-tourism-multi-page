@@ -148,10 +148,16 @@ h1, h2,h3{
     justify-content: space-between;
     margin: 0px 0px 40px 0px;
     &_title{
-      font-weight: normal;
+      @include heading_5;
       width: 100%;
       margin: 0px 0px 20px 0px;
       text-transform: uppercase;
+    }
+    &_number{
+      text-transform: uppercase;
+       mix-blend-mode: normal;
+      opacity: 0.5;
+      font-weight: 700;
     }
     &-info{
       width: 45%;
@@ -198,10 +204,57 @@ h1, h2,h3{
 }
 
 .crew{
-  background: no-repeat url(../assets/destination/background-crew-desktop.jpg);
   background-color: $dark-blue;
+  background: no-repeat url(../assets/crew/background-crew-desktop.jpg) 0px -160px;
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: end;
+  color: white;
+  &-title{
+    @include heading_5;
+    width: 100%;
+    margin: 80px 0px 20px 0px;
+    text-transform: uppercase;
+  }
+  &-content{
+    width: 38%;
+    align-self: center;
+    margin: 0px 0px 0px 30px;
+    &_subtitle{
+      @include heading_4;
+      mix-blend-mode: normal;
+      opacity: 0.5; 
+      text-transform: uppercase;
+      margin-top: 80px;
+    }
+    &_title{
+      @include heading_3;
+      text-transform: uppercase;
+    }
+    &_text{
+      @include body_text;
+      width: 35vw;
+    }
+    &-circles{
+      display: flex;
+      &_circle{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $white;
+        opacity:0.5;
+        mix-blend-mode: normal;
+        margin: 40px 15px 0px 0px;
+      }
+    }
+  }
+  &-commander{
+    width: 40vw;
+    height: 75vh;
+    object-fit: contain;
+    position: relative;
+    left: -60px;
+  }
 }

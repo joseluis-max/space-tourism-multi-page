@@ -125,6 +125,7 @@ h1, h2, h3 {
   font-family: "Barlow", Regular;
   font-size: 18px;
   line-height: 32px;
+  color: #d2d8f9;
   margin: 0px;
 }
 
@@ -150,8 +151,8 @@ h1, h2, h3 {
 }
 
 .destination {
-  background-color: #0B0D17;
   background: no-repeat url(../assets/destination/background-destination-desktop.jpg);
+  background-color: #0B0D17;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -218,10 +219,19 @@ h1, h2, h3 {
 }
 
 .destination-content_title {
-  font-weight: normal;
+  font-family: "Barlow Condensed", Regular;
+  font-size: 28px;
+  letter-spacing: 4.75px;
   width: 100%;
   margin: 0px 0px 20px 0px;
   text-transform: uppercase;
+}
+
+.destination-content_number {
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  font-weight: 700;
 }
 
 .destination-content-info {
@@ -260,6 +270,7 @@ h1, h2, h3 {
   font-family: "Barlow", Regular;
   font-size: 18px;
   line-height: 32px;
+  color: #d2d8f9;
   height: 120px;
   margin: 0px 0px 30px 0px;
 }
@@ -283,5 +294,87 @@ h1, h2, h3 {
   font-size: 28px;
   text-transform: uppercase;
   margin: 10px 50px 0px 0px;
+}
+
+.crew {
+  background-color: #0B0D17;
+  background: no-repeat url(../assets/crew/background-crew-desktop.jpg) 0px -160px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: white;
+}
+
+.crew-title {
+  font-family: "Barlow Condensed", Regular;
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  width: 100%;
+  margin: 80px 0px 20px 0px;
+  text-transform: uppercase;
+}
+
+.crew-content {
+  width: 38%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0px 0px 0px 30px;
+}
+
+.crew-content_subtitle {
+  font-family: "Bellefair", Regular;
+  font-size: 32px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+.crew-content_title {
+  font-family: "Bellefair", Regular;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+
+.crew-content_text {
+  font-family: "Barlow", Regular;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d2d8f9;
+  width: 35vw;
+}
+
+.crew-content-circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.crew-content-circles_circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+  margin: 40px 15px 0px 0px;
+}
+
+.crew-commander {
+  width: 40vw;
+  height: 75vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  left: -60px;
 }
 /*# sourceMappingURL=index.css.map */
