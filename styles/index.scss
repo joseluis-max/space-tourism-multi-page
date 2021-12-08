@@ -244,9 +244,13 @@ h1, h2,h3{
         height: 15px;
         border-radius: 50%;
         background-color: $white;
-        opacity:0.5;
+        opacity:0.25;
         mix-blend-mode: normal;
         margin: 40px 15px 0px 0px;
+        &:hover{
+          opacity: 0.5;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -256,5 +260,91 @@ h1, h2,h3{
     object-fit: contain;
     position: relative;
     left: -180px;
+  }
+}
+
+.technology{
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat url(../assets/technology/background-technology-desktop.jpg);
+  background-color: $dark-blue;
+  display: flex;
+  align-items: center;
+  &-title{
+    @include heading_5;
+    width: 100%;
+    margin: 80px 0px 100px 0px;
+    text-transform: uppercase;
+  }
+  &-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 150px;
+    &_wrapper{
+      color: $white;
+      width: 55%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &_bar{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0px 50px 0px 0px;
+    }
+    &_number{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border: 1px solid $light-blue;
+      border-radius: 50%;
+      margin: 0px 0px 65px 0px;
+      opacity: 0.5;
+      color: $light-blue;
+      text-decoration: none;  
+      @include subheading_1;
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+    &_subwrapper{
+      width: 80%;
+    }
+    &_subtitle{
+      @include heading_5;
+      text-transform: uppercase;
+      opacity: 0.5;
+    }
+    &_title{
+      @include heading_3;
+      text-transform: uppercase;
+    }
+    &_text{
+      @include body_text;
+    }
+  }
+  &-vehicle{
+    background: no-repeat url(../assets/technology/image-launch-vehicle-portrait.jpg);
+    background-size: 500px 400px;
+    width: 500px;
+    height: 400px;
+    margin: 130px 0px 0px 0px;
+  }
+  &-spaceport{
+    background: no-repeat url(../assets/technology/image-spaceport-portrait.jpg);
+    background-size: 500px 400px;
+    width: 500px;
+    height: 400px;
+    margin: 130px 0px 0px 0px;
+  }
+  &-capsule{
+    background: no-repeat url(../assets/technology/image-space-capsule-portrait.jpg);
+    background-size: 500px 400px;
+    width: 500px;
+    height: 400px;
+    margin: 130px 0px 0px 0px;
   }
 }
