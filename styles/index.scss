@@ -219,9 +219,9 @@ h1, h2,h3{
     text-transform: uppercase;
   }
   &-content{
-    width: 38%;
+    width: 50%;
     align-self: center;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 150px;
     &_subtitle{
       @include heading_4;
       mix-blend-mode: normal;
@@ -255,6 +255,6 @@ h1, h2,h3{
     height: 75vh;
     object-fit: contain;
     position: relative;
-    left: -60px;
+    left: -180px;
   }
 }

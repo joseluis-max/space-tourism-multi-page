@@ -323,11 +323,11 @@ h1, h2, h3 {
 }
 
 .crew-content {
-  width: 38%;
+  width: 50%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: 0px 0px 0px 30px;
+  margin: 0px 0px 0px 150px;
 }
 
 .crew-content_subtitle {
@@ -375,6 +375,6 @@ h1, h2, h3 {
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
-  left: -60px;
+  left: -180px;
 }
 /*# sourceMappingURL=index.css.map */
