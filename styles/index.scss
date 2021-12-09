@@ -93,7 +93,6 @@ h1, h2,h3{
       margin: 0px;
     }
   }
-
   &-button{
     background-color: $white;
     color: $dark-blue;
@@ -260,7 +259,7 @@ h1, h2,h3{
       }
     }
   }
-  &-commander{
+  &-image{
     width: 40vw;
     height: 75vh;
     object-fit: contain;
@@ -275,11 +274,12 @@ h1, h2,h3{
   background: no-repeat url(../assets/technology/background-technology-desktop.jpg);
   background-color: $dark-blue;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   &-title{
     @include heading_5;
-    width: 100%;
-    margin: 80px 0px 100px 0px;
+    color: $white;
+    margin: 100px 0px 0px 60px;
     text-transform: uppercase;
   }
   &-content{
@@ -288,9 +288,9 @@ h1, h2,h3{
     margin: 0px 0px 0px 150px;
     &_wrapper{
       color: $white;
-      width: 55%;
+      width: 60%;
       display: flex;
-      flex-wrap: wrap;
+      align-items: center;
     }
     &_bar{
       display: flex;
@@ -306,7 +306,7 @@ h1, h2,h3{
       height: 50px;
       border: 1px solid $light-blue;
       border-radius: 50%;
-      margin: 0px 0px 65px 0px;
+      margin: 30px 0px;
       opacity: 0.5;
       color: $light-blue;
       text-decoration: none;  
@@ -342,20 +342,22 @@ h1, h2,h3{
     background-size: 500px 400px;
     width: 500px;
     height: 400px;
-    margin: 130px 0px 0px 0px;
+    margin: 0px 0px 30px 0px;
   }
   &-spaceport{
     background: no-repeat url(../assets/technology/image-spaceport-portrait.jpg);
     background-size: 500px 400px;
     width: 500px;
     height: 400px;
-    margin: 130px 0px 0px 0px;
+    margin: 0px 0px 30px 0px;
   }
   &-capsule{
     background: no-repeat url(../assets/technology/image-space-capsule-portrait.jpg);
     background-size: 500px 400px;
     width: 500px;
     height: 400px;
-    margin: 130px 0px 0px 0px;
+    margin: 0px 0px 30px 0px;
   }
 }
+
+@import './tablet';
