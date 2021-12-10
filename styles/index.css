@@ -83,6 +83,20 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+.header-burguer {
+  background: no-repeat url(../assets/shared/icon-hamburger.svg);
+  width: 24px;
+  height: 21px;
+  display: none;
+}
+
+.header-close {
+  background: no-repeat url(../assets/shared/icon-close.svg);
+  width: 21px;
+  height: 20px;
+  display: none;
+}
+
 .main {
   background: no-repeat url(../assets/home/background-home-desktop.jpg);
   background-position: -100px -130px;
@@ -717,6 +731,86 @@ h1, h2, h3 {
     background-size: auto;
     width: 100%;
     height: 310px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    bottom: 86%;
+  }
+  .header-logo {
+    margin: 0px 0px 0px 30px;
+  }
+  .header-nav {
+    background-color: #0B0D17;
+    display: none;
+    position: absolute;
+    width: 70vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    padding: 50px 0px;
+  }
+  .header-nav_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 30px;
+    margin: 40px auto;
+    line-height: normal;
+  }
+  .header-nav_link:hover {
+    border-bottom: none;
+    border-right: 5px solid #FFFFFF;
+  }
+  .header-nav_link_active {
+    border-right: 5px solid #FFFFFF;
+    border-bottom: none;
+  }
+  .header-nav_number {
+    display: block;
+    margin: 0px 20px;
+  }
+  .header-burguer {
+    display: block;
+    margin: 0px 30px 0px 0px;
+    z-index: 2;
+  }
+  .header-close {
+    display: block;
+    margin: 0px 30px 0px 0px;
+    z-index: 2;
+  }
+  .main {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .main-content {
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+  .main-content_subheading {
+    font-size: 16px;
+  }
+  .main-content_heading {
+    font-size: 80px;
+  }
+  .main-content_text {
+    font-size: 15px;
+  }
+  .main-button {
+    margin: 40px 0px;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+  .main-button:hover {
+    -webkit-box-shadow: 0px 0px 0px 30px #9797974d;
+            box-shadow: 0px 0px 0px 30px #9797974d;
   }
 }
 /*# sourceMappingURL=index.css.map */

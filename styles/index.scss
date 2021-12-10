@@ -62,6 +62,18 @@ h1, h2,h3{
       font-weight: $fw7;
     }
   }
+  &-burguer{
+    background:no-repeat url(../assets/shared/icon-hamburger.svg);
+    width: 24px;
+    height: 21px;
+    display: none;
+  }
+  &-close{
+    background:no-repeat url(../assets/shared/icon-close.svg);
+    width: 21px;
+    height: 20px;
+    display: none;
+  }
 }
 .main {
   background: no-repeat url(../assets/home/background-home-desktop.jpg);
@@ -361,3 +373,4 @@ h1, h2,h3{
 }
 
 @import './tablet';
+@import './phone';
