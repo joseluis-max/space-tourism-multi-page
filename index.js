@@ -13,17 +13,18 @@ if (main.className == "crew") {
 if (main.className == "technology") {
     nav_link[3].classList.add("header-nav_link_active")
 }
+
 let button_burguer = document.getElementsByClassName("header-burguer");
 button_burguer = button_burguer[0];
 button_burguer.addEventListener("click", () => {
-    let nav = document.querySelector(".header-nav");
     if (button_burguer.className == "header-burguer"){
         button_burguer.className = "header-close";
-        nav.style.display = "block";
+        let nav = document.querySelector(".header-nav");
+        nav.className = "header-nav_v";
     }
     else {
         button_burguer.className = "header-burguer";
-        nav.style.display = "none";
+        let nav = document.querySelector(".header-nav_v");
+        nav.className = "header-nav";
     }
-    console.log(nav);
 }) 

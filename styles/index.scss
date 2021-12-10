@@ -43,6 +43,17 @@ h1, h2,h3{
     box-sizing: border-box;
     text-transform: uppercase;
     @include nav-font;
+    &_v{
+      display: block;
+      background: $background;
+      backdrop-filter: blur(81.5485px);
+      width: 60vw;
+      height: 80px;
+      padding: 0px 100px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      @include nav-font;
+    }
     &_link{
       box-sizing: border-box;
       display: inline-block;
