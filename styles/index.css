@@ -994,5 +994,51 @@ h1, h2, h3 {
         -ms-flex-order: 3;
             order: 3;
   }
+  .technology {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .technology-title {
+    margin: 50px 0px;
+    font-size: 16px;
+  }
+  .technology-content_wrapper {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .technology-content_number {
+    font-size: 16px;
+    margin: 30px 10px 0px 0px;
+  }
+  .technology-content_subtitle {
+    font-size: 14px;
+  }
+  .technology-content_title {
+    font-size: 24px;
+  }
+  .technology-content_text {
+    font-size: 15px;
+  }
+  .technology-vehicle {
+    height: 160px;
+  }
+  .technology-spaceport {
+    height: 160px;
+  }
+  .technology-capsule {
+    height: 160px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
