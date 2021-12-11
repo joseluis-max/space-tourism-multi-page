@@ -1,0 +1,56 @@
+
+@mixin nav-font {
+	font-family: $nav-font-family;
+	font-size: $nav-font-size;
+	letter-spacing: $nav-font-character-space;
+}
+@mixin heading_1 {
+	font-family: $h1-font-family;
+	font-size: $h1-font-size;
+}
+@mixin heading_2 {
+	font-family: $h2-font-family;
+	font-size: $h2-font-size;
+}
+@mixin heading_3 {
+	font-family: $h3-font-family;
+	font-size: $h3-font-size;
+}
+@mixin heading_4 {
+	font-family: $h4-font-family;
+	font-size: $h4-font-size;
+}
+@mixin heading_5 {
+	font-family: $h5-font-family;
+	font-size: $h5-font-size;
+	letter-spacing: $h5-font-character-space;
+}
+@mixin subheading_1 {
+	font-family: $sh1-font-family;
+	font-size: $sh1-font-size;
+}
+@mixin subheading_2 {
+	font-family: $sh2-font-family;
+	font-size: $sh2-font-size;
+	letter-spacing: $sh2-font-character-space;
+}
+@mixin body_text {
+	font-family: $body-font-family;
+	font-size: $body-font-size;
+	line-height: $boby-font-line-height;
+	color: $light-blue;
+}
+@mixin hover{
+	border-bottom: 5px solid $white;
+    opacity: 0.50;
+}
+@mixin image_size_planet{
+	background-size: 350px;
+    width: 350px;
+    height: 350px;
+	margin: 0px 0px 0px 70px;
+}
+
+
+
+

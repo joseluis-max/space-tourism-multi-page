@@ -1,0 +1,239 @@
+@media (max-width:700px){
+    .header{
+        bottom: 86%;
+        z-index: 1;
+        &-line{
+            display: none;
+        }
+        &-logo{
+            margin: 0px 0px 0px 30px;
+        }
+        &-nav{
+            background-color: $dark-blue;
+            display: none;
+            position: absolute;
+            width: 70vw;
+            height: 100vh;
+            top: 0;
+            bottom: 0;
+            left: 30%;
+            right: 0;
+            padding: 50px 0px;
+            &_v{
+                display: block;
+                background-color: $dark-blue;
+                position: absolute;
+                width: 70vw;
+                height: 100vh;
+                top: 0;
+                bottom: 0;
+                left: 30%;
+                right: 0;
+                padding: 50px 0px;
+            }
+            &_link{
+                display: flex;
+                height: 30px;
+                margin: 40px auto;
+                line-height: normal;
+                &:hover{
+                    border-bottom: none;
+                    border-right: 5px solid $white;
+                }
+                &_active{
+                    border-right: 5px solid $white;
+                    border-bottom: none;
+                }
+            }
+            &_number{
+                display: block;
+                margin: 0px 20px;
+            }
+        }
+        &-burguer{
+            display: block;
+            margin: 0px 30px 0px 0px;
+            z-index: 2;
+        }
+        &-close{
+            display: block;
+            margin: 0px 30px 0px 0px;
+            z-index: 2;
+        }
+    }
+    .main{
+        justify-content: end;
+        &-content{
+            width: 80%;
+            height: auto;
+            text-align: center;
+            &_subheading{
+                font-size: 16px;
+            }
+            &_heading{
+                font-size: 80px;
+            }
+            &_text{
+                font-size: 15px;
+            }
+        }
+        &-button{
+            margin: 40px 0px;
+            width: 150px;
+            height: 150px;
+            font-size: 20px;
+            &:hover{
+                box-shadow: 0px 0px 0px 30px $gray;
+            }
+        }
+    }
+    .destination{
+        &-moon{
+            margin: 20px auto;
+            background-size: 170px;
+            width: 170px;
+            height: 170px;
+        }
+        &-mars{
+            margin: 20px auto;
+            background-size: 170px;
+            width: 170px;
+            height: 170px;
+        }
+        &-europa{
+            margin: 20px auto;
+            background-size: 170px;
+            width: 170px;
+            height: 170px;
+        }
+        &-titan{
+            margin: 20px auto;
+            background-size: 170px;
+            width: 170px;
+            height: 170px;
+        }
+        &-content{
+            width: 90%;
+            margin: 0px auto;
+            padding: 0px;
+            &_title{
+                font-size: 16px;
+                margin: 80px 0px 10px 0px;
+            }
+            &-info{
+                &_navlink{
+                    font-size: 14px;
+                    margin: 0px 20px 0px 0px;;
+                }
+                &_title{
+                    font-size: 56px;
+                }
+                &_text{
+                    font-size: 15px;
+                    height: auto;
+                }
+                &_wrapper{
+                    display: block;
+                }
+                &_distanceTime{
+                    margin: 30px 0px 0px 0px;
+                }
+                &_number{
+                    margin: 10px 0px 0px 0px;
+                }
+            }
+        }
+    }
+    .crew{
+        position: absolute;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-title{
+            font-size: 16px;
+            margin: 30px 0px 30px 0px;
+        }
+        &-content{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            order: 4;
+            margin: 1px 0px 0px 0px;
+            &_subtitle{
+                font-size: 16px;
+                margin: 0px 0px 10px 0px;
+                order: 2;
+            }
+            &_title{
+                font-size: 24px;
+                order: 3;
+                margin: 0px 0px 15px 0px;
+            }
+            &_text{
+                font-size: 15px;
+                margin: 0px;
+                width: 100%;
+                order: 4;
+            }
+            &-circles{
+                order: 1;
+                z-index: 0;
+            }
+        }
+        &-image{
+            left: 0;
+            order: 2;
+            margin: 0px;
+        }
+        &-line{
+            display: block;
+            width: 90%;
+            border-top: 1px solid $gray;
+            margin:0px auto 0px auto;
+            order: 3;
+        }
+    }
+    .technology{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        &-title{
+            margin: 50px 0px;
+            font-size: 16px;
+        }
+        &-content{
+            
+            &_wrapper{
+                width: 90%;
+                margin: 0px auto;
+            }
+            &_number{
+                font-size: 16px;
+                margin: 30px 10px 0px 0px;
+            }
+            &_subtitle{
+                font-size: 14px;
+            }
+            &_title{
+                font-size: 24px;
+            }
+            &_text{
+                font-size: 15px;
+            }
+        }
+        &-vehicle{
+            height: 160px;
+        }
+        &-spaceport{
+            height: 160px;
+        }
+        &-capsule{
+            height: 160px;
+        }
+    }
+}

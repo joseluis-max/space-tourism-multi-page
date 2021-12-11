@@ -1,0 +1,163 @@
+@media (max-width: 900px) {
+    .header{
+        top: 0;
+        bottom: 92%;
+        &-line{
+            display: none;
+        }
+        &-nav {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0px;
+            height: 100%;
+             &_v{
+                display: block;
+            }
+            &_link{
+                margin: 0px;
+            }
+            &_number{
+                display: none;
+            }
+        }
+    }
+    .main {
+        background-image: url(../assets/home/background-home-tablet.jpg);
+        background-position: 0px 0px;
+        background-size: 100vw 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-button{
+            margin: 100px 0px 0px 0px;
+        }
+    }
+    .destination{
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+        background-size: 100vw 100vh;
+        align-items: center;
+        &-content{
+            text-align: center;
+            padding: 0px 100px;
+            &_title{
+                margin: 100px 0px 30px -150px;
+            }
+            &-info{
+                width: auto;
+                &_wrapper{
+                    justify-content: center;    
+                }
+                &_nav{
+                display: flex;
+                justify-content: center;
+                }
+                &_navlink{
+                    margin: 0px 30px;
+                }
+                &_distanceTime{
+                    margin: 0px 20px;
+                }
+                &_number{
+                    margin: 0px 20px;
+                }
+            }
+        }
+        &-moon{
+            margin: 0px auto 50px auto;
+        }
+        &-mars{
+            margin: 0px auto 50px auto;
+        }
+        &-europa{
+            margin: 0px auto 50px auto;
+        }
+        &-titan{
+            margin: 0px auto 50px auto;
+        }
+    }
+    .crew{
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+        background-position: 0px 0px;
+        background-size: 100vw 100vh;
+        flex-wrap: wrap;
+        &-title{
+            margin: 100px 0px 0px 56px;
+        }
+        &-content{
+            text-align: center;
+            width: 80%;
+            margin: 0px auto;
+            &_subtitle{
+                margin: 50px 0px 0px 0px;
+            }
+            &_text{
+                width: 60vw;
+                margin: auto;
+            }
+            &-circles{
+                justify-content: center;
+                &_circle{
+                    margin: 20px 14px;
+                }
+            }
+        }
+        &-image{
+            left: 0;margin: 0px auto;
+            position: static;
+            height: auto;
+            width: 45vw;
+        }
+    }
+    .technology{
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
+        background-size: 100vw 100vh;
+        align-items: flex-end;
+        flex-direction: no-wrap;
+        &-title{
+            margin: 60px 0px 0px 50px;
+        }
+        &-content{
+            text-align: center;
+            width: 100%;
+            flex-direction: column-reverse;
+            margin: 0px;
+            &_wrapper{
+                margin: 60px auto;
+                display: block;
+                width: 70%;
+            }
+            &_subwrapper{
+                width: 100%;
+                margin: 40px 0px 0px 0px;
+            }
+            &_bar{
+                flex-direction: row;
+                margin: 0px;
+            }
+            &_number{
+                margin: 10px 30px;
+            }
+        }
+        &-vehicle{
+            margin: 0px;
+            background-image: url(../assets/technology/image-launch-vehicle-landscape.jpg);
+            background-size: 101vw auto;
+            width: 100%;
+            height: 310px;
+        }
+        &-spaceport{
+            margin: 0px;
+            background-image: url(../assets/technology/image-spaceport-landscape.jpg);
+            background-size: 101vw auto;
+            width: 100%;
+            height: 310px;
+        }
+        &-capsule{
+            margin: 0px;
+            background-image: url(../assets/technology/image-space-capsule-landscape.jpg);
+            background-size: 101vw auto;
+            width: 100%;
+            height: 310px;
+        }
+    }
+}
