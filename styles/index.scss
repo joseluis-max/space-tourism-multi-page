@@ -234,13 +234,13 @@ h1, h2,h3{
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: end;
+  flex-wrap: wrap;
+  align-items: flex-end;
   color: white;
   &-title{
     @include heading_5;
     width: 100%;
-    margin: 80px 0px 20px 0px;
+    margin: 110px 0px 0px 150px;
     text-transform: uppercase;
   }
   &-content{
@@ -252,7 +252,7 @@ h1, h2,h3{
       mix-blend-mode: normal;
       opacity: 0.5; 
       text-transform: uppercase;
-      margin-top: 80px;
+      margin-top: 20px;
     }
     &_title{
       @include heading_3;
@@ -283,11 +283,17 @@ h1, h2,h3{
     }
   }
   &-image{
-    width: 40vw;
+    width: 30vw;
     height: 75vh;
     object-fit: contain;
     position: relative;
-    left: -180px;
+    left: -130px;
+    &_full{
+      height: auto;
+    }
+  }
+  &-line{
+    display: none;    
   }
 }
 

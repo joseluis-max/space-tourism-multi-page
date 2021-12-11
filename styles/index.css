@@ -338,12 +338,11 @@ h1, h2, h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   color: white;
 }
 
@@ -352,7 +351,7 @@ h1, h2, h3 {
   font-size: 28px;
   letter-spacing: 4.75px;
   width: 100%;
-  margin: 80px 0px 20px 0px;
+  margin: 110px 0px 0px 150px;
   text-transform: uppercase;
 }
 
@@ -370,7 +369,7 @@ h1, h2, h3 {
   mix-blend-mode: normal;
   opacity: 0.5;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .crew-content_title {
@@ -413,12 +412,20 @@ h1, h2, h3 {
 }
 
 .crew-image {
-  width: 40vw;
+  width: 30vw;
   height: 75vh;
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
-  left: -180px;
+  left: -130px;
+}
+
+.crew-image_full {
+  height: auto;
+}
+
+.crew-line {
+  display: none;
 }
 
 .technology {
@@ -666,7 +673,7 @@ h1, h2, h3 {
         flex-wrap: wrap;
   }
   .crew-title {
-    margin: 100px 0px 0px -190px;
+    margin: 100px 0px 0px 56px;
   }
   .crew-content {
     text-align: center;
@@ -677,7 +684,8 @@ h1, h2, h3 {
     margin: 50px 0px 0px 0px;
   }
   .crew-content_text {
-    width: auto;
+    width: 60vw;
+    margin: auto;
   }
   .crew-content-circles {
     -webkit-box-pack: center;
@@ -689,9 +697,10 @@ h1, h2, h3 {
   }
   .crew-image {
     left: 0;
+    margin: 0px auto;
     position: static;
     height: auto;
-    width: 50vw;
+    width: 45vw;
   }
   .technology {
     background-image: url(../assets/technology/background-technology-tablet.jpg);
@@ -761,6 +770,7 @@ h1, h2, h3 {
 @media (max-width: 700px) {
   .header {
     bottom: 86%;
+    z-index: 1;
   }
   .header-line {
     display: none;
@@ -905,26 +915,85 @@ h1, h2, h3 {
     margin: 10px 0px 0px 0px;
   }
   .crew {
+    position: absolute;
+    z-index: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
   .crew-title {
     font-size: 16px;
-    margin: 20px 0px;
+    margin: 30px 0px 30px 0px;
+  }
+  .crew-content {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin: 1px 0px 0px 0px;
   }
   .crew-content_subtitle {
     font-size: 16px;
+    margin: 0px 0px 10px 0px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .crew-content_title {
     font-size: 24px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0px 0px 15px 0px;
   }
   .crew-content_text {
     font-size: 15px;
+    margin: 0px;
+    width: 100%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .crew-content-circles {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    z-index: 0;
+  }
+  .crew-image {
+    left: 0;
+    width: 60vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0px;
+  }
+  .crew-line {
+    display: block;
+    width: 90%;
+    border-top: 1px solid #9797974d;
+    margin: 0px auto 0px auto;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 /*# sourceMappingURL=index.css.map */
