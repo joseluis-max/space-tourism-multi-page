@@ -115,7 +115,6 @@ h1, h2, h3 {
 
 .main {
   background: no-repeat url(../assets/home/background-home-desktop.jpg);
-  background-position: -100px -130px;
   background-size: auto;
   width: 100vw;
   height: 100vh;
